@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
+    <head th:include="fragments/header :: header">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +15,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <title>Работа мечты!</title>
+    <title>Проект Работа мечты!</title>
 </head>
 <body>
 <div class="container">
@@ -54,6 +54,7 @@
         </table>
     </div>
 </div>
+    <footer th:include="fragments/footer :: footer"></footer>
 </div>
 </body>
 </html>
