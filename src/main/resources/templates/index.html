@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-    <head th:include="fragments/header :: header">
+    <head th:insert="~{fragments/header :: header}">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,7 +20,7 @@
 <body>
 <div class="container">
     <div class="row">
-        <div th:replace="fragments/navigation :: navigation"></div>
+        <div th:replace="~{fragments/navigation :: navigation}"></div>
         <div class="container">
         <table class="table">
             <thead>
@@ -54,7 +54,7 @@
         </table>
     </div>
 </div>
-    <footer th:include="fragments/footer :: footer"></footer>
+    <footer th:insert="~{fragments/footer :: footer}"></footer>
 </div>
 </body>
 </html>
