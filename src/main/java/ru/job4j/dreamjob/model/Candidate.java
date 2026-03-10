@@ -52,6 +52,8 @@ public class Candidate {
         this.creationDate = creationDate;
     }
 
+    public Candidate() { }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
