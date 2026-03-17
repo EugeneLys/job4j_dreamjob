@@ -6,7 +6,6 @@ import ru.job4j.dreamjob.model.Candidate;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
@@ -22,13 +21,13 @@ public class MemoryCandidateRepository implements CandidateRepository {
 
     private MemoryCandidateRepository() {
         save(new Candidate(0, "Michael Jordan", "Developer",
-                LocalDateTime.now(), 1));
+                LocalDateTime.now(), 1, 0));
         save(new Candidate(0, "Steve Curry", "Java Developer",
-                LocalDateTime.now(), 1));
+                LocalDateTime.now(), 1, 0));
         save(new Candidate(0, "Lebron James", "Software engineer",
-                LocalDateTime.now(),  1));
+                LocalDateTime.now(),  1, 0));
         save(new Candidate(0, "Shaquille O'Neal", "Programmer",
-                LocalDateTime.now(), 1));
+                LocalDateTime.now(), 1, 0));
     }
 
     @Override
@@ -48,7 +47,7 @@ public class MemoryCandidateRepository implements CandidateRepository {
         return candidates.computeIfPresent(candidate.getId(),
                 (id, oldCandidate) -> new Candidate(oldCandidate.getId(), candidate.getName(),
                         candidate.getDescription(), candidate.getCreationDate(),
-                        candidate.getCityId())) != null;
+                        candidate.getCityId(), candidate.getFileId())) != null;
     }
 
     @Override
