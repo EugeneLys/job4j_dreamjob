@@ -1,5 +1,6 @@
 package ru.job4j.dreamjob;
 
+
 import net.jcip.annotations.ThreadSafe;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
