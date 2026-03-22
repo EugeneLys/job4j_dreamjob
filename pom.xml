@@ -34,7 +34,7 @@
         <profile>
             <id>production</id>
             <properties>
-                <liquibase.config>C:\projects\job4j_dreamjob\src\main\java\ru\job4j\dreamjob\db\liquibase.properties
+                <liquibase.config>src/main/java/ru/job4j/dreamjob/db/liquibase.properties
                 </liquibase.config>
             </properties>
         </profile>
